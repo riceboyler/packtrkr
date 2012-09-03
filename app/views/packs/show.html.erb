@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Unitnumber:</b>
+  <%= @pack.unitnumber %>
+</p>
+
+<p>
+  <b>Charterorg:</b>
+  <%= @pack.charterOrg %>
+</p>
+
+<p>
+  <b>String:</b>
+  <%= @pack.string %>
+</p>
+
+<p>
+  <b>Primarycontact:</b>
+  <%= @pack.primaryContact %>
+</p>
+
+<p>
+  <b>Charterdate:</b>
+  <%= @pack.charterDate %>
+</p>
+
+
+<%= link_to 'Edit', edit_pack_path(@pack) %> |
+<%= link_to 'Back', packs_path %>

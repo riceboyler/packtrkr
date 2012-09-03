@@ -1,0 +1,37 @@
+<%= form_for(@pack) do |f| %>
+  <% if @pack.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pack.errors.count, "error") %> prohibited this pack from being saved:</h2>
+
+      <ul>
+      <% @pack.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :unitnumber %><br />
+    <%= f.number_field :unitnumber %>
+  </div>
+  <div class="field">
+    <%= f.label :charterOrg %><br />
+    <%= f.text_field :charterOrg %>
+  </div>
+  <div class="field">
+    <%= f.label :string %><br />
+    <%= f.text_field :string %>
+  </div>
+  <div class="field">
+    <%= f.label :primaryContact %><br />
+    <%= f.number_field :primaryContact %>
+  </div>
+  <div class="field">
+    <%= f.label :charterDate %><br />
+    <%= f.date_select :charterDate %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

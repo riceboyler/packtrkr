@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  unitnumber: 1
+  charterOrg: MyString
+  string: MyString
+  primaryContact: 1
+  charterDate: 2012-09-03
+
+two:
+  unitnumber: 1
+  charterOrg: MyString
+  string: MyString
+  primaryContact: 1
+  charterDate: 2012-09-03

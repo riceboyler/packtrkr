@@ -1,0 +1,31 @@
+<h1>Listing packs</h1>
+
+<table>
+  <tr>
+    <th>Unitnumber</th>
+    <th>Charterorg</th>
+    <th>String</th>
+    <th>Primarycontact</th>
+    <th>Charterdate</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @packs.each do |pack| %>
+  <tr>
+    <td><%= pack.unitnumber %></td>
+    <td><%= pack.charterOrg %></td>
+    <td><%= pack.string %></td>
+    <td><%= pack.primaryContact %></td>
+    <td><%= pack.charterDate %></td>
+    <td><%= link_to 'Show', pack %></td>
+    <td><%= link_to 'Edit', edit_pack_path(pack) %></td>
+    <td><%= link_to 'Destroy', pack, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pack', new_pack_path %>
