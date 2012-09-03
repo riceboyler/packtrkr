@@ -1,4 +1,6 @@
 Packtrkr::Application.routes.draw do
+  resources :packs
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
